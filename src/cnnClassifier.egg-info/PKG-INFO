@@ -33,11 +33,11 @@ https://github.com/Adrshp806/Kidney-Disease-Classification-MLflow-DVC/tree/main
 ### STEP 01 - Create a conda env adter opening the repo
 
 ```bash
-conda create -m cnncls python=3.8 -y
+conda create -m name python=3.8 -y
 ```
 
 ```bash
-conda activate cnncls
+conda activate name
 ```
 
 ### STEP 01 - Install the requirements
