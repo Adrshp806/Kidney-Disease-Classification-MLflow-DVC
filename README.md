@@ -29,3 +29,13 @@ conda activate name
 ```bash
 pip install -r requirements.txt
 ```
+
+
+
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/Adrshp806/Kidney-Disease-Classification-MLflow-DVC.mlflow
+
+export MLFLOW_TRACKING_USERNAME= Adrshp806
+
+export MLFLOW_TRACKING_PASSWORD=0420a8c84c2013ba40f9b15e3bc304de457911fc
