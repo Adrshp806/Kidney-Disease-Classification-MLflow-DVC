@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/python/Kidney-Disease-Classification-MLflow-DVC/mlruns/0/16d3f31c757943eaa3927381cdd411b4/artifacts
+end_time: 1738785499939
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 16d3f31c757943eaa3927381cdd411b4
+run_name: persistent-snipe-359
+run_uuid: 16d3f31c757943eaa3927381cdd411b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1738785489870
+status: 4
+tags: []
+user_id: adiip

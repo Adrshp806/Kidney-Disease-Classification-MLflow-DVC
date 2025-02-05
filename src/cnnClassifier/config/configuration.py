@@ -5,7 +5,6 @@ from cnnClassifier.utils.common import (read_yaml,create_directories, save_json)
 from cnnClassifier.entity.config_entity import PrepareBaseModelConfig, TrainingConfig,EvaluationConfig
 
 
-
 class ConfigurationManager:
     def __init__(
         self,
