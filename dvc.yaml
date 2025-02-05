@@ -58,4 +58,5 @@ stages:
     deps:
       - artifacts/training/model.h5  # Dependency on the trained model
     outs:
-      - models/model.h5 
+      - models/model.h5:
+         cache: false
