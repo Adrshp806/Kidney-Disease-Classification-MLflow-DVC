@@ -52,3 +52,10 @@ stages:
     metrics:
     - scores.json:
         cache: false
+
+  move_model:
+    cmd: python src/cnnClassifier/pipeline/move_model.py
+    deps:
+      - artifacts/training/model.h5  # Dependency on the trained model
+    outs:
+      - models/model.h5 
