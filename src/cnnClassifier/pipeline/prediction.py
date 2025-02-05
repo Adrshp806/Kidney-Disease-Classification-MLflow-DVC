@@ -1,9 +1,12 @@
 import numpy as np
 import tensorflow as tf
-from tensorflow.keras.models import load_model # type: ignore
-from tensorflow.keras.preprocessing import image # type: ignore
+import os 
+from pathlib import Path
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing import image 
 
 import os
+
 
 class PredictionPipeline:
     def __init__(self,filename):
@@ -12,8 +15,14 @@ class PredictionPipeline:
 
     
     def predict(self):
-        # load model
-        model = load_model(os.path.join("model", "model.h5"))
+        # model_path = os.path.join("model", "model.h5")
+        model_path = Path("artifacts") / "training" / "model.h5"
+        print(model_path)
+        print(f"Loading model from: {model_path}")
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(f"Model file not found at {model_path}")
+        
+        model = load_model(model_path)
 
         imagename = self.filename
         test_image = image.load_img(imagename, target_size = (224,224))
