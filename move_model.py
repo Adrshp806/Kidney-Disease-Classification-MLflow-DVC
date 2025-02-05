@@ -11,12 +11,12 @@ if os.path.exists(source_dir):
     if not os.path.exists(destination_dir):
         os.makedirs(destination_dir)
 
-    # Full destination path (where the file will be moved)
+    # Full destination path (where the file will be copied)
     destination_path = os.path.join(destination_dir, 'model.h5')
 
-    # Move the file
-    shutil.move(source_dir, destination_path)
+    # Copy the file
+    shutil.copy(source_dir, destination_path)
 
-    print(f"File 'model.h5' has been moved to {destination_path}")
+    print(f"File 'model.h5' has been copied to {destination_path}")
 else:
     print(f"File '{source_dir}' not found!")

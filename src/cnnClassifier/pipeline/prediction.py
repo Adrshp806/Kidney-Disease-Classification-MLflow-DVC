@@ -15,7 +15,7 @@ class PredictionPipeline:
 
     
     def predict(self):
-        model_path = os.path.join("model", "model.h5")
+        model_path = os.path.join("models", "model.h5")
         # model_path = Path("artifacts") / "training" / "model.h5"
         print(model_path)
         print(f"Loading model from: {model_path}")
